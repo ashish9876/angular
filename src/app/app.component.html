@@ -1,0 +1,37 @@
+<!-- <input type="text" [(ngModel)]="name">
+<p>{{ name }}</p>
+
+<input type="text" [(ngModel)]="email">
+<p>{{ email }}</p>
+
+<app-login></app-login>
+ -->
+
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <div id ="user-data">
+  <div class ="form-group">
+    <label for="username"><b>Username</b></label>
+    <input 
+        type="text"
+        id="username"
+        ngModel
+        name = "username">
+  </div>
+
+    <br><br>
+
+  <div class ="form-group">
+    <label for="password"><b>Password</b></label>
+    <input 
+        type="text"
+        id="password"
+        class="form-control"
+        ngModel
+        name="password">
+  </div>
+
+   <br><br>
+    <button type="submit">Login</button>
+    
+  </div>
+</form>
